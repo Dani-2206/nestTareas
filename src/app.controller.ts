@@ -7,8 +7,10 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('')
+  @Get()
   getHello()   {
-    return "OLA";
+    return {
+      message: "Bienvenido a la API de Gestión de Tareas"
+  }
   }
 }
