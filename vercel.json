@@ -19,5 +19,6 @@
       "dest": "src/main.ts"
     }
   ],
-  "installCommand": "npm install --force && npx prisma generate"
+  
+  "installCommand": "npm install --force && npx prisma generate" 
 }
