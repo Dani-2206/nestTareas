@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "command": "npm install && npx prisma generate && npx nest build"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/main.js"
+    }
+  ]
+}
